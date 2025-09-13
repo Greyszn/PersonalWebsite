@@ -1,3 +1,261 @@
-*{
-    background-color: bisque;
+/* @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200;300;400;700&display=swap'); */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: aliceblue;
+}
+
+body {
+  background: rgb(10, 10, 10);
+  color: #EEEEEEEE;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  line-height: 1.7;
+  border-bottom: 8px solid #007bff ;
+}
+
+nav{
+  background: #030001;
+  position: fixed;
+  width: 100%;
+}
+nav .logo{
+  background: url(./image/rose.JPG) center / cover no-repeat ;
+  text-indent: -9999px;
+  width: 30px;
+  height: 30px;
+  margin: 5px 5px 10px ;
+  float: left;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 10px;
+  list-style: none;
+  /* margin-right: 20px; */
+  margin: 5px 5px 10px ;
+  justify-content: end;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  padding: auto;
+}
+
+nav a:hover{
+  color: #339cff;
+  text-decoration: underline;
+}
+
+
+header{
+  /* height: 33.33vh; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 100px;
+}
+header p {
+  color: #007bff;
+  line-height: .4;
+}
+
+header h6{
+  font-size: 14px;
+}
+
+header a{
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 12px 24px;
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 500;
+  border-radius: 100px;
+}
+header a:hover{
+  box-shadow: 0 20px 30px 0 rgba(76, 115, 189, 0.178);
+  background-color: #0163cc ;
+}
+header img {
+  width: 700px;
+  height: 500px;
+  border-radius: 50px;
+  justify-self: center;
+  align-self: center;
+}
+.about-me-section{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: rgba(44, 43, 43, 0.11);
+  padding: 50px;
+}
+
+/* .narrative img {
+  width: 20px;
+  height: 12px;
+  border-radius: 5px;
+} */
+
+.narrative h6 {
+  color: #339cff;
+  font-size: 14px;
+  line-height: .4;
+}
+
+.narrative h4 {
+  font-size: 20px;
+}
+
+.narrative{
+  line-height: 26px;
+}
+/* .infographics img {
+  width: 20px;
+  height: 12px;
+  border-radius: 5px;
+} */
+
+.infographics {
+  padding: 35px;
+  background: #03030348;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.infographics li {
+  background: #222222a1;      
+  list-style: none;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  
+}
+
+.infographics img {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.skills {
+  padding: 35px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.skills ul{
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.skills li {
+  background: #222222a1;      
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.skills img {
+  width: 50px ;
+}
+
+.connect {
+  background: rgba(44, 43, 43, 0.11);
+  padding: 35px 80px;
+  margin-top: 10px;
+}
+
+.connect a{
+  text-decoration: none;
+  color: #339cff;
+}
+
+.connect a:hover{
+  text-decoration: underline;
+}
+
+footer {
+  background: #030001;
+  padding: 20px;
+  text-align: end;
+}
+
+.social-links img { 
+  width: 32px;
+  padding: 5px;
+}
+
+.social-links img:hover {
+  filter: brightness(0) saturate(100%) invert(39%) sepia(83%) saturate(747%) hue-rotate(181deg) brightness(91%) contrast(85%);
+}
+
+
+/* 
+  NEED TO ADD BETTER HERO IMAGES AND WORK ON THE CONTACT ME SECTION AND ALSO MAKE SITE RESPONSIVE
+   */
+
+
+
+   /* Media queries */
+
+
+  @media only screen and (max-width:365px){
+
+    .main-body {
+        width: 100vw;
+        margin: auto;
+    }
+
+    /* SIGN-IN-FORM  */
+  header {
+    /* width: auto; */
+    margin: 0.5rem;
+    padding: 5%;
+  }
+
+  .headshot{
+    display: none;
+  }
+
+.dropdown-nav{
+    
+}
+
+.recall,
+.row-3{
+    font-size: smaller;
+    display: flex;
+    flex-direction: column;
+}
+.row-3{
+    display: none;
+}
+
+.sign-up-form {
+    width:auto ;
+    margin: 5%;
+    margin-top: 5rem;
+    padding: 5%;
+}
+
+.sec-5-img {
+    max-width: 100%;
+}
+
+.sec-6-img {
+    max-width: 100%;
+}
 }
